@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: check-weather
-          image: 289193905928.dkr.ecr.ap-southeast-2.amazonaws.com/check_weather:d1ac94bb208bd59d828ab390c2225fdac178a3cd
+          image: 289193905928.dkr.ecr.ap-southeast-2.amazonaws.com/check_weather:ff7fd97f9e0762613abc5a9522151885467178b1
           ports:
             - containerPort: 8080
           resources:
