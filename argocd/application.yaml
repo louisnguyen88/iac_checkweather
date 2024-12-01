@@ -6,12 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/louisnguyen88/check_weather.git
-    targetRevision: master
+    repoURL: https://github.com/louisnguyen88/iac_checkweather.git
+    targetRevision: HEAD
     path: k8s
   destination:
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc #internal K8s service add
     namespace: check-weather
+    
   syncPolicy:
     automated:
       prune: true
