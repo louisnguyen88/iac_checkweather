@@ -16,7 +16,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: check-weather
-          image: 289193905928.dkr.ecr.ap-southeast-2.amazonaws.com/check_weather:74390cc11ee44a9c95f519e77de4537643b24db9
+          image: 289193905928.dkr.ecr.ap-southeast-2.amazonaws.com/check_weather:976fce45e0c2e35c0738e3f34bd4ec2d4f9d3af7
           ports:
             - containerPort: 8080
           resources:
