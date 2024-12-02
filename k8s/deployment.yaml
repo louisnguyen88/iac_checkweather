@@ -13,6 +13,7 @@ spec:
       labels:
         app: check-weather
     spec:
+      serviceAccountName: default
       containers:
         - name: check-weather
           image: 289193905928.dkr.ecr.ap-southeast-2.amazonaws.com/check_weather:74390cc11ee44a9c95f519e77de4537643b24db9
@@ -28,6 +29,9 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /workspace/config
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
       volumes:
         - name: config-volume
           configMap:

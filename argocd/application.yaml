@@ -10,9 +10,8 @@ spec:
     targetRevision: HEAD
     path: k8s
   destination:
-    server: https://kubernetes.default.svc #internal K8s service add
+    server: https://kubernetes.default.svc #internal eks cluster add
     namespace: check-weather
-    
   syncPolicy:
     automated:
       prune: true

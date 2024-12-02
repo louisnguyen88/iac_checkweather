@@ -23,7 +23,7 @@ data:
         cache-names:
           - weather
     server:
-      port: 8081
+      port: 8080
     
     openweathermap:
       api:
